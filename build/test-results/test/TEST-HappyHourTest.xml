@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="HappyHourTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-12-03T17:56:44" hostname="lucas-zenbook-ux425ja" time="0.016">
+  <properties/>
+  <testcase name="happyHour()" classname="HappyHourTest" time="0.016"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
