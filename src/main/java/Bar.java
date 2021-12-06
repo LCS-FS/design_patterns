@@ -11,12 +11,12 @@ abstract class Bar{
         return happyHour;
     };
     public void startHappyHour() {
-        notifyObservers();
         happyHour = true;
+        notifyObservers();
     };
     public void endHappyHour() {
-        notifyObservers();
         happyHour = false;
+        notifyObservers();
     };
 
     private List<BarObserver> observers;
