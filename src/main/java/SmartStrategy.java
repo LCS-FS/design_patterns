@@ -1,21 +1,29 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class SmartStrategy implements OrderingStrategy{
-    private List<Wants> wantsList;
+    private ArrayList<Wants> wantsList = new ArrayList<Wants>();
     private boolean happyHour;
 
     @Override
     public void wants(StringDrink drink, StringRecipe recipe, StringBar bar) {
         Wants wants = new Wants(drink, recipe, bar);
         wantsList.add(wants);
-        if(happyHour) bar.order(drink, recipe);
+
+        for (Wants want : wantsList) {
+            if(want.getBar().isHappyHour()) want.getBar().order(want.drink, want.getRecipe());
+        }
+
+    }
+
+    public boolean getHappyhour(){
+        return happyHour;
     }
 
     @Override
     public void happyHourStarted(StringBar bar) {
-        happyHour = true;
-        for (Wants wants: wantsList){
-            wants.getBar().order(wants.drink, wants.getRecipe());
+        for (Wants want : wantsList) {
+            if(want.getBar().isHappyHour()) want.getBar().order(want.drink, want.getRecipe());
         }
     }
 
