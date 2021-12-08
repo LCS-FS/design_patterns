@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="AlienTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-12-08T18:00:24" hostname="DESKTOP-L6V6LBB" time="0.015">
+  <properties/>
+  <testcase name="romulan()" classname="AlienTest" time="0.015"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
